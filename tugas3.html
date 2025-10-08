@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benang Setokel Beach Resort</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #0077b6;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #ffa500;
+        text-align: center;
+        padding: 10px;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 40px 20px;
+      }
+      .activities,
+      .gallery,
+      .contact,
+      .booking,
+      .food-menu {
+        background-color: #f1efef;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .card {
+        background: rgb(187, 227, 243);
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+      }
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      footer {
+        background: #003049;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Wisata Benang Stokel</h1>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#activities">Activities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Pemesanan</a>
+      <a href="#food">Kuliner</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+      <img
+        src="img/rumah.jpg"
+        alt="Benang Setukel"
+        style="width: 100%; max-height: 600px; object-fit: cover"
+      />
+      <h2 style="text-align: center">Welcome to Benang Stokel</h2>
+      <p style="text-align: center">
+        Experience the pristine beauty of Lombok Tengah’s tropical paradise
+      </p>
+    </section>
+
+    <section id="activities" class="activities">
+      <h2>Aktivitas Wisata Benang Stokel</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>River Tubing</h3>
+          <img src="img/puding-removebg-preview.png" alt="" width="90px">
+          <p>
+            Nikmati deburan air di sungai. Spot River Tubing favorit para profesional
+            dan pemula.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Petualangan</h3>
+           <img src="img/wisata-removebg-preview.png" alt="" width="90px">
+          <p>
+            Jelajahi keindahan Wisata Benang Stokel Lombok dengan Pemandangan yang
+            indah dan Angin Yang Segar.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Pengolahan Kuliner</h3>
+           <img src="img/khas-removebg-preview.png" alt="" width="90px">
+          <p>
+            Belajar Sambil Mecicipi Aneka Berbagai Macam Khas Makanan, Minuman Dan Tradisi seperti Tari, rotan, Rajutan, Kopi Kedelai, Kopi Khas Desa Aik Berik & Kue Pukis, Keripik Talas dll.
+          </p>
+        </div>
+         <div class="card">
+          <h3>Rumah Kreatif</h3>
+           <img src="img/kreatip-removebg-preview.png" alt="" width="90px">
+          <p>
+            Ciptakan Keajaiban di sini ide menjadi karya nyata
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>📷 Galeri Wisata Desa Aik Berik Benang Stokel</h2>
+      <div class="card-container">
+        <img src="img/1.jpg" width="150" />
+        <img src="img/2.jpg" width="150" />
+        <img src="img/tubing.jpg" width="150" />
+        <img src="img/11.jpg" width="150" />
+        <img src="img/4.jpg" width="150" />
+        <img src="img/9.jpg" width="150" />
+        <img src="img/3.jpg" width="150" />
+        <img src="img/5.jpg" width="150" />
+        <img src="img/aneka kereatip.jpg" width="350" />
+        <img src="img/7.jpg" width="150" />
+      </div>
+    </section>
+
+    <section id="booking" class="booking">
+      <h2>🧾 Pemesanan Tiket Wisata</h2>
+      <form>
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required />
+
+        <label>Pilih Opsi:</label>
+        <select name="aktivitas">
+          <option>Premium</option>
+          <option>Reguler</option>
+          <option>Ekonomis</option>
+        </select>
+
+        <label>Tanggal Kegiatan:</label>
+        <input type="date" name="tanggal" required />
+
+        <label>Jumlah Orang:</label>
+        <input type="number" name="jumlah" min="1" required />
+
+        <button type="submit">Pesan Sekarang</button>
+      </form>
+    </section>
+
+    <section id="food" class="food-menu">
+      <h2>🍽️ Aneka Makanan</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Ikan Bakar</h3>
+          <img src="img/ikan bakar.jpg" alt="" width="100px" />
+          <p>Ikan segar dibakar dengan bumbu khas Lombok</p>
+          <p><strong>Rp50.000</strong></p>
+        </div>
+        <div class="card">
+          <h3>Sate Lilit</h3>
+          <img src="img/sate lilit.png" alt="" width="100px" />
+          <p>Sate khas Lombok dengan rempah melimpah</p>
+          <p><strong>Rp30.000</strong></p>
+        </div>
+        <div class="card">
+          <h3>Kelapa Muda</h3>
+          <img src="img/kelapa.png" alt="" width="100px" />
+          <p>Minuman segar langsung dari kelapa</p>
+          <p><strong>Rp15.000</strong></p>
+        </div>
+        <div class="card">
+          <h3>Buah Tropis</h3>
+          <img src="img/buah.jpg" alt="" width="100px" />
+          <p>Buah segar seperti duriyan, manggis, pepaya</p>
+          <p><strong>Rp20.000</strong></p>
+        </div>
+        <div class="card">
+          <h3>Ayam Panggang</h3>
+         <img src="img/ayam panggang.jpg" alt="" width="100px">
+         <p>Ayam Kampung Di Panggang Dengan Bumbu-Bumbu Rempah Pilihan</p>
+         <p><strong>Rp55.000</strong></p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>☎️ Hubungi Kami</h2>
+      <p>
+        <strong>🗺️Alamat:</strong> Desa Aik Berik Kecamatan Batukliang Utara
+        Kabupaten Lombok Tenggah Nusa Tenggara Barat-Indonesia
+      </p>
+      <p><strong>📞Telepon:</strong> +62 0838 0890 5820</p>
+      <p><strong>📧Email:</strong> amrilntb123@gmail.com</p>
+      <p>
+        <strong>Jam Operasional:</strong> Senin - Minggu (07:00 - 18:00 WITA)
+      </p>
+      <iframe
+        src="https://maps.google.com/maps?q=Desa%20Wisata%20Aik%20Berik&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="250"
+      ></iframe>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Aik Berik Wisata - Lombok Tengah. Nusa Tenggara Barat. All
+        rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
